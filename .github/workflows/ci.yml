@@ -17,5 +17,5 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: ghcr.io/${{ github.repository }}:latest
+          tags: ghcr.io/buildtheearth/shorter:latest
           build-args: BUILD_ID=${{ github.sha }}

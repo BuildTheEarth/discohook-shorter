@@ -6,3 +6,4 @@ python-dotenv==0.15.0
 Quart==0.13.1
 Quart-CORS==0.3.0
 Quart-Rate-Limiter==0.4.0
+Jinja2<=3.0.3

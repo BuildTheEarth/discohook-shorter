@@ -28,7 +28,7 @@ async def create():
     shortname = await generate_shortname(8)
     key = f"{current_app.import_name}-shorten-{shortname}"
     await current_app.redis.set(key, url)
-    await current_app.redis.expire(key, ttl)
+    await current_app.redis.expire(key, int(ttl))
 
     url = urlunparse(
         (
